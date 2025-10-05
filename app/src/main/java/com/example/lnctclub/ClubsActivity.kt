@@ -1,3 +1,5 @@
+package com.example.lnctclub
+
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +16,7 @@ class ClubsActivity : AppCompatActivity() {
     private lateinit var db: FirebaseFirestore
     private lateinit var clubsRecyclerView: RecyclerView
     private lateinit var clubsAdapter: ClubsAdapter
-    private lateinit var clubsListener: ListenerRegistration
+    private var clubsListener: ListenerRegistration? = null // Made nullable for safety
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,17 +27,13 @@ class ClubsActivity : AppCompatActivity() {
         clubsRecyclerView = findViewById(R.id.allClubsRecyclerView)
         clubsRecyclerView.layoutManager = LinearLayoutManager(this)
 
-        // Initialize the adapter with an empty list
         clubsAdapter = ClubsAdapter(mutableListOf())
         clubsRecyclerView.adapter = clubsAdapter
 
-        // Start fetching data from Firestore
         setupAllClubsListener()
     }
 
     private fun setupAllClubsListener() {
-        // Here, we fetch ALL clubs from the 'clubs' collection.
-        // We don't use a 'whereEqualTo' filter, so it gets everything.
         clubsListener = db.collection("clubs")
             .addSnapshotListener { snapshots, e ->
                 if (e != null) {
@@ -49,7 +47,6 @@ class ClubsActivity : AppCompatActivity() {
                         val club = document.toObject(Club::class.java)
                         allClubsList.add(club)
                     }
-                    // Update the adapter with the new list
                     clubsAdapter.updateList(allClubsList)
                 }
             }
@@ -57,7 +54,6 @@ class ClubsActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        // It's important to remove the listener when the activity is destroyed
-        clubsListener.remove()
+        clubsListener?.remove()
     }
 }
