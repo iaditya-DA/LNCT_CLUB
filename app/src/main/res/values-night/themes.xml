@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.LNCTCLUB" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorOnPrimary">@android:color/black</item>
+        <item name="android:fontFamily">@font/adlam_display</item>
+    </style>
+
+    <style name="Theme.LNCTCLUB" parent="Base.Theme.LNCTCLUB" />
+
+    <!-- Bold Text Style (Custom) -->
+    <style name="BoldText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

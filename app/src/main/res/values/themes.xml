@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.LNCTCLUB" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- App primary color -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Default font for whole app -->
+        <item name="android:fontFamily">@font/adlam_display</item>
+    </style>
+
+    <!-- Actual theme used in Manifest -->
+    <style name="Theme.LNCTCLUB" parent="Base.Theme.LNCTCLUB" />
+
+    <!-- Custom Bold Text style -->
+    <style name="BoldText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+</resources>

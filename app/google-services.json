@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "13326245308",
+    "project_id": "lnct-club",
+    "storage_bucket": "lnct-club.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13326245308:android:507ed31a782127179cdfb9",
+        "android_client_info": {
+          "package_name": "com.example.lnctclub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWFFuwhQuIgMDkkpmEgB9XehRFGOHfLNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

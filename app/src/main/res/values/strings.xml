@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">LNCT CLUB</string>
+
+    <!-- Logo and tagline -->
+    <string name="lnct_logo_desc">LNCT University Logo</string>
+    <string name="more_than_academics">More Than Academics</string>
+
+    <!-- Start Screen Buttons -->
+    <string name="club_icon_desc">Club Icon</string>
+    <string name="student_icon_desc">Student Icon</string>
+    <string name="login_as_club">Login as Club</string>
+    <string name="login_as_student">Login as Student</string>
+
+    <!-- Common -->
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="enter_password">Enter your password</string>
+
+    <!-- Club Login -->
+    <string name="enter_club_id">Enter your Club ID</string>
+    <string name="invalid_club_credentials">Invalid Club ID or Password</string>
+    <string name="club_login_success">Club Login Successful</string>
+
+    <!-- Student Login -->
+    <string name="enter_enrollment">Enter your Enrollment Number</string>
+    <string name="invalid_student_credentials">Invalid Enrollment Number or Password</string>
+    <string name="student_login_success">Student Login Successful</string>
+
+    <!-- Sign Up -->
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enrollment_number">Enrollment Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already have an account?</string>
+
+    <!-- Forgot Password -->
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_registered_email">Enter your registered email</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="otp_sent_success">OTP sent successfully</string>
+
+    <!-- Dashboard -->
+    <string name="welcome">Welcome</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="club_list">Available Clubs</string>
+
+
+    <string name="event_icon_desc">Event Icon</string>
+    <string name="profile_icon_desc">Profile Icon</string>
+
+</resources>
